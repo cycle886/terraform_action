@@ -44,9 +44,9 @@ jobs:
           go version
 
       - name: Download terraform
-        run: 
+        run: |
             certutil -urlcache -split -f https://github.com/hashicorp/terraform/archive/refs/tags/v1.1.7.tar.gz
-      #     tar -zxvf v1.1.7.tar.gz
+            tar -zxvf v1.1.7.tar.gz
 
       - name: Static build
         run: |
