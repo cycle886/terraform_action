@@ -50,8 +50,8 @@ jobs:
 
       - name: Static build
         run: |
-          cd terraform
-          ls
+          cp terraform /usr/loacl/bin
+          cat ~/.bash_profile
 
       # - name: compression
       #   run: |
