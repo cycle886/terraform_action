@@ -56,7 +56,6 @@ jobs:
           echo "export PATH" >> ~/.bash_profile
           cat ~/.bash_profile
           source ~/.bash_profile
-          terraform
 
       # - name: compression
       #   run: |
