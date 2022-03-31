@@ -50,7 +50,6 @@ jobs:
 
       - name: Static build
         run: |
-          cd terraform_1.1.7_darwin_amd64
           ls
 
       # - name: compression
