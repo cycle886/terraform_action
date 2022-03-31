@@ -54,11 +54,11 @@ jobs:
           go build
           ls
 
-      # - name: compression
-      #   run: |
-      #     cd $GITHUB_WORKSPACE
-      #     7z a terraform.7z $GITHUB_WORKSPACE/terraform-1.1.7/terraform
+      - name: compression
+        run: |
+          cd $GITHUB_WORKSPACE
+          7z a terraform.7z $GITHUB_WORKSPACE/terraform-1.1.7/terraform
 
-      # - uses: actions/upload-artifact@v3
-      #   with:
-      #     path: terraform.7z
+      - uses: actions/upload-artifact@v3
+        with:
+          path: terraform.7z
