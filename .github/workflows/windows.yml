@@ -56,9 +56,10 @@ jobs:
 
       - name: compression
         run: |
-          cd $GITHUB_WORKSPACE
-          ls
-        # 7z a terraform.7z $GITHUB_WORKSPACE/terraform-1.1.7/terraform.exe
+          cd terraform-1.1.7
+        # cd $GITHUB_WORKSPACE
+          ls 
+          7z a terraform.7z terraform.exe
 
       - uses: actions/upload-artifact@v3
         with:
