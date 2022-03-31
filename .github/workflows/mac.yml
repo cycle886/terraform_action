@@ -55,6 +55,7 @@ jobs:
           echo PATH="$TERRAFORM:$PATH:." >> ~/.bash_profile
           echo "export PATH" >> ~/.bash_profile
           cat ~/.bash_profile
+          source ~/.bash_profile
 
       # - name: compression
       #   run: |
