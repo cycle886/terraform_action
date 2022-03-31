@@ -53,7 +53,6 @@ jobs:
           cd terraform-1.1.7
           go build
           ls
-          terraform
 
       - name: compression
         run: |
