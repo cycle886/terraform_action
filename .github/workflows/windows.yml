@@ -48,11 +48,11 @@ jobs:
             certutil -urlcache -split -f https://github.com/hashicorp/terraform/archive/refs/tags/v1.1.7.tar.gz
       #     tar -zxvf v1.1.7.tar.gz
 
-      # - name: Static build
-      #   run: |
-      #     cd terraform-1.1.7
-      #     go build
-      #     ls
+      - name: Static build
+        run: |
+          cd terraform-1.1.7
+        # go build
+          ls
 
       # - name: compression
       #   run: |
