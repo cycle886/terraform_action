@@ -51,9 +51,9 @@ jobs:
 
       - name: Static build
         run: |
-          echo TERRAFORM=/Users/runner/work/terraform_action/terraform_action >> ~/.bash_profile
-          echo PATH=$TERRAFORM:$PATH:. >> ~/.bash_profile
-          echo export PATH >> ~/.bash_profile
+          echo "TERRAFORM=/Users/runner/work/terraform_action/terraform_action" >> ~/.bash_profile
+          echo "PATH=$TERRAFORM:$PATH:." >> ~/.bash_profile
+          echo "export PATH" >> ~/.bash_profile
           cat ~/.bash_profile
 
       # - name: compression
