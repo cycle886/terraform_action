@@ -43,7 +43,7 @@ jobs:
           # sudo cp -r /usr/local/go/bin/* /usr/bin
           go version
 
-      # - name: Download terraform
+      - name: Download terraform
         run: |
             certutil -urlcache -split -f https://github.com/hashicorp/terraform/archive/refs/tags/v1.1.7.tar.gz
       #     tar -zxvf v1.1.7.tar.gz
